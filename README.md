@@ -1,4 +1,4 @@
-### Advanced Databricks Concepts
+# Advanced Databricks Concepts
 
 ## Connecting to a remote PostgreSQL instance
 
