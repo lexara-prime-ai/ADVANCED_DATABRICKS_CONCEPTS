@@ -3,6 +3,11 @@
 ## Connecting to a remote PostgreSQL instance
 
 ```python
+# Import required modules
+from pyspark.sql import SparkSession
+
+spark = SparkSession.getoOrCreate()
+
 # Define required fields
 driver = "org.postgresql.Driver"
 url = "jdbc:postgresql://<database_url>/<database_name>"
