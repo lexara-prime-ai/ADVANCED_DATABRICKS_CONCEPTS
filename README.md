@@ -38,5 +38,23 @@ df = spark.read.format("jdbc")
 # numberofemployees:integer
 ```
 
+## Createing a Delta table in a external location
+* *PostgreSQL* example
+```sql
+CREATE TABLE <table_name>
+
+USING postgresql
+
+OPTIONS (
+  dbtable '<table-name>'
+  host '<database-host-url>'
+  port '5432'
+  database '<database-name>'
+  user '<username>'
+  password '<password>'
+)
+
+LOCATION <path-to-data-lake>
+```
 
 
